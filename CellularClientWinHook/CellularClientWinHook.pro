@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-10-13T22:42:19
+# Project created by QtCreator 2014-10-16T20:14:24
 #
 #-------------------------------------------------
 
@@ -8,16 +8,14 @@ QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = CellularServer
+TARGET = CellularClientWinHook
 TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    cellularserver.cpp
+    hook_cilent.cpp
 
 HEADERS  += \
-    cellularserver.h
-
-LIBS += -L $$(MYIM_HOME)/lib -lCellularBase
+    hook_client.h
 
 DESTDIR = $$(MYIM_HOME)/bin
