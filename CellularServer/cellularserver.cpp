@@ -37,7 +37,6 @@ void CellularServer::readyRead()
     cellular::Response response;
     
     QLocalSocket *psocket = qobject_cast< QLocalSocket* >(sender());
-    
 
     psocket->read((char*)&request, sizeof(request));
     qDebug() << request.clientId << request.key << request.keyPress;

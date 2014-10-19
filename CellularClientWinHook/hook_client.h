@@ -2,7 +2,7 @@
 #define HOOK_CLIENT_H
 
 bool HookKeyboard();
-void ConnectToServer();
+bool ConnectToServer();
 int MainLoop();
 
 #endif // HOOK_CLIENT_H

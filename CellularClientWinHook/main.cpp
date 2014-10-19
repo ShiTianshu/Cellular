@@ -4,8 +4,9 @@
 
 int main(int, char **)
 {
-    qDebug() << "client";
-    ConnectToServer();
-    HookKeyboard();
+    if (!ConnectToServer())
+        return 1;
+    if (!HookKeyboard())
+        return 2;
     return MainLoop();
 }
