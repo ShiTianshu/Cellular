@@ -1,4 +1,0 @@
-#ifndef CELLULAR_SERVICE_H
-#define CELLULAR_SERVICE_H
-
-#endif // CELLULAR_SERVICE_H
